@@ -3,7 +3,6 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, GPT2Model
 from util import nethook
 from util.generate import generate_interactive, generate_fast
 from demo import demo_model_editing, stop_execution, print_loud
-import pdb
 import numpy as np
 import random
 
@@ -43,7 +42,7 @@ def main():
     ]
     
     # Execute rewrite
-    ALG_NAME = "RETS"
+    ALG_NAME = "ROME"
     model_new, orig_weights = demo_model_editing(
         model, tok, request, generation_prompts, alg_name=ALG_NAME
     )

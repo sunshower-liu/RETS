@@ -6,6 +6,7 @@ from typing import Dict, List, Tuple
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from rets import RETSHyperParams, apply_rets_to_model
+from rome import ROMEHyperParams, apply_rome_to_model
 from util import nethook
 from util.generate import generate_fast
 from util.globals import *
@@ -90,6 +91,8 @@ def load_alg(alg_name):
 
     if alg_name == "RETS":
         return RETSHyperParams, apply_rets_to_model, "RETS", ""
+    elif alg_name == "ROME":
+        return ROMEHyperParams, apply_rome_to_model, "ROME", ""
 
 
 def print_loud(x, pad=3):
