@@ -4,7 +4,7 @@ from pathlib import Path
 
 import torch
 
-from ...code.util.globals import *
+from util.globals import *
 
 REMOTE_URL = f"{REMOTE_ROOT_URL}/data/dsets/attribute_snippets.json"
 

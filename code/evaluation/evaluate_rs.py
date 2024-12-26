@@ -14,14 +14,13 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from .dsets import (
     AttributeSnippets,
     CounterFactDataset,
-    MENDQADataset,
     get_tfidf_vectorizer,
 )
 from .py.eval_utils_counterfact import compute_rewrite_quality_counterfact_rs
-from ..code.rome import ROMEHyperParams, apply_rome_to_model
-from ..code.rets import RETSHyperParams, apply_rets_to_model
-from ..code.util import nethook
-from ..code.util.globals import *
+from rome import ROMEHyperParams, apply_rome_to_model
+from rets import RETSHyperParams, apply_rets_to_model
+from util import nethook
+from util.globals import *
 
 ALG_DICT = {
     "ROME": (ROMEHyperParams, apply_rome_to_model),

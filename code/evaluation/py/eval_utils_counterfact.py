@@ -15,9 +15,9 @@ import pdb
 from sklearn.feature_extraction.text import TfidfVectorizer
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from dsets import AttributeSnippets
-from ...code.util.generate import generate_fast
-from ...code.util.perplexity import perplexity
+from ..dsets import AttributeSnippets
+from util.generate import generate_fast
+from util.perplexity import perplexity
 
 CUDA = "cuda:4"
 

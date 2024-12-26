@@ -7,8 +7,8 @@ import scipy.sparse as sp
 import torch
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from dsets import AttributeSnippets
-from ...code.util.globals import *
+from . import AttributeSnippets
+from util.globals import *
 
 REMOTE_IDF_URL = f"{REMOTE_ROOT_URL}/data/dsets/idf.npy"
 REMOTE_VOCAB_URL = f"{REMOTE_ROOT_URL}/data/dsets/tfidf_vocab.json"

@@ -5,7 +5,7 @@ from pathlib import Path
 import torch
 from torch.utils.data import Dataset
 
-from ...code.util.globals import *
+from util.globals import *
 
 
 class CounterFactDataset(Dataset):
@@ -13,7 +13,7 @@ class CounterFactDataset(Dataset):
         self, data_dir: str, size: typing.Optional[int] = None, *args, **kwargs
     ):
         data_dir = Path(data_dir)
-        cf_loc = data_dir / "counterfact10000_rs.json"
+        cf_loc = data_dir / "counterfact_rs.json"
         if not cf_loc.exists():
             print(f"{cf_loc} does not exist. Please download.")
             

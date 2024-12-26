@@ -2,7 +2,7 @@
 Materials for the paper "Relation Also Knows: Rethinking the Recall and Editing of Factual Associations in Auto-Regressive Transformer Language Models".
 
 ## Folders
-The *code* folder contains the codes for RETS editing. The *knowledge_detection* folder contains the codes for the detection of relational knowledge. The *dataset* folder contains the supplemented counterfact dataset with R-Specificity samples. The *evaluation* folder contains codes for evaluation supplemented with the R-Specificity criteria.
+The *dataset* folder contains the supplemented counterfact dataset with R-Specificity samples, namely COUNTERFACT_RS. The *code* folder contains the codes for RETS editing and the codes for evaluation on COUNTERFACT_RS. The *knowledge_detection* folder contains the codes for the detection of relational knowledge. The *evaluation* folder contains codes for evaluation supplemented with the R-Specificity criteria.
 
 ## Set up
 ```bash

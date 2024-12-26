@@ -7,7 +7,7 @@ import numpy as np
 import pdb
 from scipy.stats import hmean
 
-from ..code.util.globals import *
+from util.globals import *
 
 
 def main(

@@ -5,7 +5,7 @@ from pathlib import Path
 import torch
 from torch.utils.data import Dataset
 
-from ...code.util.globals import *
+from util.globals import *
 
 REMOTE_URL = f"{REMOTE_ROOT_URL}/data/dsets/known_1000.json"
 
