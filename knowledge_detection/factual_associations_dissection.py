@@ -407,7 +407,7 @@ def draw_line(name_of_alg,color_index,datas,x_l):
     std=np.std(datas,axis=0)
     r1 = list(map(lambda x: x[0]-x[1], zip(avg, std)))
     r2 = list(map(lambda x: x[0]+x[1], zip(avg, std)))
-    plt.plot(x_l, avg, color=color,label=name_of_alg,linewidth=3.5, fontsize=12)
+    plt.plot(x_l, avg, color=color,label=name_of_alg,linewidth=3.5)
     plt.fill_between(x_l, r1, r2, color=color, alpha=0.2)
 
 def draw_bar(datas, x_l):
