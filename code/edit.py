@@ -42,7 +42,7 @@ def main():
     ]
     
     # Execute rewrite
-    ALG_NAME = "ROME"
+    ALG_NAME = "RETS"
     model_new, orig_weights = demo_model_editing(
         model, tok, request, generation_prompts, alg_name=ALG_NAME
     )

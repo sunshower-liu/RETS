@@ -148,7 +148,7 @@ def compute_ur(
 
 def get_rel_cov_from_known(model, tok, layer, context_templates, hparams):
     ## compute the matrix for subject constraints
-    known_name = "counterfact"
+    known_name = "counterfact_rs"
     model_name = model.config._name_or_path.replace("/", "_")
     knowns_df = pd.read_json(f"data/{known_name}.json")
     

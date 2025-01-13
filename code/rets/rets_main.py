@@ -76,7 +76,7 @@ def execute_rets(
         # Space required for correct tokenization
         request["target_new"]["str"] = " " + request["target_new"]["str"]
     print(
-        f"Executing ROME algorithm for the update: "
+        f"Executing RETS algorithm for the update: "
         f"[{request['prompt'].format(request['subject'])}] -> [{request['target_new']['str']}]"
     )
 
